@@ -62,7 +62,7 @@ public class Dictionary {
 		LinkedList<RichWord> paroleErrate = new LinkedList<RichWord>();
 		
 		for(String s : inputTextList)
-			if(!dizionario.contains(s)) {
+			if(!dizionario.contains(s.toLowerCase())) {
 				RichWord rw = new RichWord(s,false);
 				paroleErrate.add(rw);
 			}

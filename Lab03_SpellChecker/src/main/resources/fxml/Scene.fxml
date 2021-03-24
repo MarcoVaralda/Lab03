@@ -61,7 +61,7 @@
                   <Insets left="10.0" right="10.0" top="10.0" />
                </VBox.margin>
                <children>
-                  <Button mnemonicParsing="false" onAction="#doSpellCheck" text="Spell check">
+                  <Button fx:id="btnSpellCheck" disable="true" mnemonicParsing="false" onAction="#doSpellCheck" text="Spell check">
                      <HBox.margin>
                         <Insets bottom="10.0" left="250.0" right="10.0" />
                      </HBox.margin>
@@ -88,7 +88,7 @@
                   <Insets left="10.0" right="10.0" />
                </VBox.margin>
                <children>
-                  <TextArea fx:id="txtResult">
+                  <TextArea fx:id="txtResult" editable="false">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" />
                      </HBox.margin>
@@ -100,15 +100,15 @@
                   <Insets left="10.0" right="10.0" />
                </VBox.margin>
                <children>
-                  <Label text="Number of error" textFill="#e80a0a">
+                  <Label fx:id="txtNumberOfError" text="Number of error" textFill="#e80a0a">
                      <font>
                         <Font size="14.0" />
                      </font>
                      <HBox.margin>
-                        <Insets bottom="10.0" left="125.0" right="10.0" top="5.0" />
+                        <Insets bottom="10.0" left="120.0" right="10.0" top="5.0" />
                      </HBox.margin>
                   </Label>
-                  <Button mnemonicParsing="false" onAction="#doClearText" text="Clear text">
+                  <Button fx:id="btnClearText" disable="true" mnemonicParsing="false" onAction="#doClearText" text="Clear text">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" />
                      </HBox.margin>
@@ -123,7 +123,7 @@
                   <Insets bottom="10.0" left="10.0" right="10.0" />
                </VBox.margin>
                <children>
-                  <Label text="Tempo richiesto">
+                  <Label fx:id="txtTime" text="Tempo richiesto">
                      <HBox.margin>
                         <Insets bottom="10.0" left="10.0" right="10.0" />
                      </HBox.margin>
