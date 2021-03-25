@@ -1,4 +1,4 @@
-package it.polito.tdp.spellchecker;
+package it.polito.tdp.spellchecker.model;
 
 public class RichWord {
 	
@@ -16,6 +16,10 @@ public class RichWord {
 
 	public boolean isCorretta() {
 		return corretta;
+	}
+	
+	public void setCorretta() {
+		this.corretta=true;
 	}
 
 }

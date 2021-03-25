@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
 import it.polito.tdp.spellchecker.model.Dictionary;
+import it.polito.tdp.spellchecker.model.RichWord;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
